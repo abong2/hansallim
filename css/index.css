@@ -2,20 +2,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 *{
     margin: 0;
-    padding: 0;
+    padding:0;
     box-sizing: border-box;
     outline-style: none;
 }
-ul,li{
+ul{
     list-style: none;
+
 }
 a{
-    color: #000;
+    color:#000;
     text-decoration: none;
 }
 img{
     vertical-align: middle;
-    border: 0;
+    border:0;
 }
 html{
     font-size: 16px;
@@ -26,20 +27,20 @@ body{
     line-height: 24px;
     letter-spacing: 0;
     font-weight: 400;
-    color: #000;
+    color:#000;
 }
-/* 공통요소 (clearfix)*/
+/* 공통요소 */
 .clearfix::after{
-    content: "";
+    content:"";
     position: relative;
     display: block;
-    width: 100%;
+    width:100%;
     clear: both;
 }
 .container{
     position: relative;
     display: block;
-    width: 1200px;
+    width:1200px;
     margin: 0 auto;
 }
 /* 전체 레이아웃 */
@@ -48,19 +49,19 @@ body{
     display: block;
     /* 헤더가 fix가 되므로 레이아웃용 */
     padding-top: 128px;
-    transition: padding-top 0.2s;
+    transition: padding-top 0.2;
 }
 /* 상단 */
 .header{
     position: fixed;
-    top: 0;
-    left: 0;
+    top:0;
+    left:0;
     transition: top 0.2s;
     display: block;
-    width: 100%;
+    width:100%;
     background-color: #fff;
     border-bottom: 1px solid #eee;
-    z-index: 999;
+    z-index: 9999;
 }
 .header-top{
     position: relative;
@@ -71,7 +72,7 @@ body{
     position: relative;
     display: block;
     float: left;
-    font-size: 0;
+    /* font-size: 0; */
     letter-spacing: 0;
 }
 .logo{
@@ -83,8 +84,8 @@ body{
     position: relative;
     display: inline-block;
     font-size: 13px;
-    color: #666;
-    border: 0;
+    color:#666;
+    border:0;
     background-color: transparent;
     cursor: pointer;
     vertical-align: -2px;
@@ -107,31 +108,28 @@ body{
     display: inline-block;
     vertical-align: -9px;
 }
-.member-list li{
+.member-list > li{
     position: relative;
     display: block;
     float: left;
-    padding: 0 10px;
+    padding:0 10px;
 }
-.member-list > li::after{
+.member-list li::after{
     content: "";
     position: absolute;
-    top: 7px;
-    right: 0;
-    width: 1px;
-    height: 8px;
+    top:7px;
+    right:0;
+    width:1px;
+    height:8px;
     background-color: #bbb;
 }
-.member-list >li:last-child{
-    padding-right: 0;
-}
-.member-list >li:last-child:after{
+.member-list li:last-child:after{
     content: none;
 }
-.member-list >li>a{
-    position: relative;
-    display: block;
-    font-size: 13px;
-    color: #666;
+.member-list > li > a{
+   position: relative;
+   display: block;
+   font-size: 13px;
+   color:#666;
 }
 /* center-more는 js연동 */
