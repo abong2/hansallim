@@ -1,26 +1,28 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #my-list{
+        #myList {
             display: none;
         }
     </style>
 </head>
+
 <body>
-    <ul id="my-list">
+    <ul id="myList">
         <li>항목 1</li>
         <li>항목 2</li>
         <li>항목 3</li>
     </ul>
-
     <script>
-        const 목록 = document.getElementById("my-list");
+        const 목록 = document.getElementById("myList")
         const css = getComputedStyle(목록).display;
         console.log(css);
     </script>
 </body>
+
 </html>
