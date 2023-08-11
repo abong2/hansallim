@@ -39,7 +39,7 @@ window.onload = function () {
  const fixtop = document.querySelector(".fix-top");
  fixtop.addEventListener("click", function () {
   // window.scrollTo(0,0)
-   window.scrollTo({ top: 0, behavior: "smooth" });
+   window.scrollTo({ top: 0, behavior: "smooth" });+
  });
   // ===============================================================
   // data.json을 로딩
